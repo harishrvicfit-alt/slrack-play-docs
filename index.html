@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SL Rack App Documents</title>
+    <style>
+      :root {
+        --bg: #f3f1eb;
+        --card: #ffffff;
+        --text: #18352a;
+        --muted: #62756d;
+        --line: #d7ddd6;
+        --brand: #004528;
+        --accent: #f4b133;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top right, rgba(244,177,51,.18), transparent 20rem),
+          linear-gradient(180deg, #f9f8f4 0%, var(--bg) 100%);
+      }
+      main { max-width: 920px; margin: 0 auto; padding: 32px 20px 56px; }
+      .hero, .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 8px 30px rgba(19,44,34,.06);
+      }
+      .hero {
+        background: linear-gradient(135deg, #0a5a37 0%, #004528 100%);
+        color: #fff;
+        padding: 32px 28px;
+        border: none;
+      }
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(255,255,255,.12);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+      h1 { margin: 0 0 10px; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; }
+      p { margin: 0 0 14px; line-height: 1.6; }
+      .grid {
+        display: grid;
+        gap: 18px;
+        margin-top: 20px;
+      }
+      .card { padding: 22px; }
+      h2 { margin: 0 0 10px; font-size: 22px; color: var(--brand); }
+      a { color: var(--brand); font-weight: 700; }
+      .small { color: var(--muted); font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="eyebrow">SL Rack</div>
+        <h1>Public App Documents</h1>
+        <p>
+          Public support and compliance pages for Catch The Sun - SL Rack.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Privacy Policy</h2>
+          <p>Data handling, account, leaderboard, newsletter and app service information.</p>
+          <a href="./privacy-policy.html">Open privacy policy</a>
+        </article>
+
+        <article class="card">
+          <h2>Support</h2>
+          <p>Contact details for app support and issue reporting.</p>
+          <a href="./support.html">Open support page</a>
+        </article>
+
+        <article class="card">
+          <h2>Data Deletion Requests</h2>
+          <p>Information on how users can request deletion of account-related data.</p>
+          <a href="./data-deletion.html">Open data deletion page</a>
+        </article>
+      </section>
+
+      <p class="small" style="margin-top:18px;">Last updated: April 15, 2026</p>
+    </main>
+  </body>
+</html>
